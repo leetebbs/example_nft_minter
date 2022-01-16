@@ -48,7 +48,7 @@ export const connect = () => {
           method: "net_version",
         });
         // const NetworkData = await SmartContract.networks[networkId];
-        if (networkId == 137) {
+        if (networkId === 137) {
           const SmartContractObj = new Web3EthContract(
             SmartContract,
             "0x827acb09a2dc20e39c9aad7f7190d9bc53534192"
