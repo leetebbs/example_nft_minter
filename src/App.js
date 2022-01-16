@@ -120,21 +120,13 @@ function App() {
             ai={"center"}
             style={{ backgroundColor: "var(--light-grey)", padding: 24, margin: 100}}
           >
-            {Number(data.totalSupply) == 1000 ? (
+            {Number(data.totalSupply) === 1000 ? (
               <>
                 <s.TextTitle style={{ textAlign: "center" }}>
                   The sale has ended.
                 </s.TextTitle>
                 <s.SpacerSmall />
-                <s.TextDescription style={{ textAlign: "center" }}>
-                  You can still find NFTS on{" "}
-                  <a
-                    target={"_blank"}
-                    href={"https://opensea.io/collections"}
-                  >
-                    Opensea.io
-                  </a>
-                </s.TextDescription>
+               
               </>
             ) : (
               <>
